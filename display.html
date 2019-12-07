@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+    <script type="text/javascript" src="js/twinkle.js"></script>
+    <style>
+      @font-face {
+        font-family: 'HuiFont29';   /* フォント名 */
+        src: url('font/HuiFont29.ttf') format('truetype');   /* フォントファイル */
+      }
+    </style>
+    <link href="css/display.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.0.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.0.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <p style="font-family:HuiFont29;color: #e9eaea;">.</p>
+    <div class="bg-video-wrap">
+      <canvas id="particle" class="background" width="" height=""></canvas>
+      <div class="center">
+        <video id="back_video" src="center_movie.mp4" width="" height="" loop muted autoplay>
+        </video>
+      </div>
+      <div id="comment_area" class="overlay">
+      <canvas id="comment" width="" height="">
+        Canvasに対応したブラウザを使って下さい。
+      </canvas>
+      </div>
+
+      <div id="twinkle_area" class="overlay">
+      <!-- !!canvasのサイズを画像サイズと一致させる!! -->
+      <canvas id="twinkle" width="" height=""></canvas>
+      <!-- #kirakira_arae // -->
+      </div>
+      
+      <!--
+      <h1>Fullscreen video background
+      </h1>-->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script type="text/javascript" src="js/display.js"></script>
+  </body>
+</html>
+
